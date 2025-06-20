@@ -12,6 +12,7 @@ const Register = () => {
     email: "",
     city: "",
   });
+  const backendUrl="http://localhost:7000"
 
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [responseMsg, setResponseMsg] = useState("");
@@ -27,7 +28,7 @@ const Register = () => {
     setResponseMsg("");
 
     try {
-      const response = await fetch("http://localhost:7000/api/register", {
+      const response = await fetch(`${backendUrl}/api/register`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

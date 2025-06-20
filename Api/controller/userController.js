@@ -44,4 +44,14 @@ const register = async (req, res) => {
   }
 };
 
-module.exports={register}
+// Get all users
+const getAllUsers=async(req,res)=>{
+  try {
+   const users= await User.find({})
+   res.json({success:true,users})
+  } catch (error) {
+     console.error( error.message);
+     res.status(500).json({ message: "Server error, please try again later." });
+  }
+}
+module.exports={register,getAllUsers}
