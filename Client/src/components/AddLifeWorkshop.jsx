@@ -3,12 +3,12 @@ import { FaCalendarAlt, FaClock, FaMapMarkerAlt } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 
 const AddLifeWorkshop = () => {
-  const navigate=useNavigate()
+  const navigate = useNavigate();
   return (
     <div
       className="min-h-screen flex flex-col justify-between text-center px-4 py-6 relative bg-gradient-to-br from-white via-[#f6f0ff] to-white"
       style={{
-        backgroundImage: "url('/illustration.png')",
+        backgroundImage: "url('/illustration.jpg')",
         backgroundPosition: "bottom center",
         backgroundRepeat: "no-repeat",
         backgroundSize: "cover",
@@ -64,8 +64,10 @@ const AddLifeWorkshop = () => {
 
       {/* Register Button */}
       <div className="mt-8">
-        <button onClick={()=>navigate('/register')}
-         className="bg-gradient-to-r from-purple-600 to-purple-700 text-white font-medium px-8 py-3 rounded-full shadow hover:scale-105 transition duration-300 cursor-pointer">
+        <button
+          onClick={() => navigate("/register")}
+          className="bg-gradient-to-r from-purple-600 to-purple-700 text-white font-medium px-8 py-3 rounded-full shadow hover:scale-105 transition duration-300 cursor-pointer"
+        >
           Please click here to register
         </button>
       </div>
