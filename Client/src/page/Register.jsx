@@ -12,7 +12,7 @@ const Register = () => {
     email: "",
     city: "",
   });
-  const backendUrl="http://localhost:7000"
+  const backendUrl = "https://add-life-workshop-backend.vercel.app";
 
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [responseMsg, setResponseMsg] = useState("");

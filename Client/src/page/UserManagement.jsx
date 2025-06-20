@@ -3,7 +3,7 @@ import axios from "axios";
 
 const UserManagement = () => {
   const [users, setUsers] = useState([]);
-  const backendUrl = "http://localhost:7000"; // replace with your actual URL
+  const backendUrl = "https://add-life-workshop-backend.vercel.app"; // replace with your actual URL
 
   useEffect(() => {
     const fetchUsers = async () => {
