@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Clickable Image Area</title>
+  <style>
+    .image-container {
+      position: relative;
+      display: inline-block;
+    }
+
+    .clickable-area {
+      position: absolute;
+      left: 50%; /* Adjust based on image */
+      top: 72%;  /* Adjust based on image */
+      transform: translate(-50%, -50%);
+      width: 280px;
+      height: 50px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+<div class="image-container">
+  <img src="c838df84-bccd-4b61-8e42-120ba4d838de.jpg" alt="Workshop Banner" width="400">
+  <div class="clickable-area" onclick="handleClick()"></div>
+</div>
+
+<script>
+  function handleClick() {
+    window.location.href = "form.html"; // Redirects to form.html
+  }
+</script>
+
+</body>
+</html>
