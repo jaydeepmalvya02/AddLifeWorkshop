@@ -1,12 +1,14 @@
 import { Route, Routes } from "react-router-dom";
 import AddLifeWorkshop from "./components/AddLifeWorkshop";
 import "./index.css";
+import Register from "./page/Register";
 
 function App() {
   return (
-    <div>
+    <div className="container">
       <Routes>
         <Route path="/" element={<AddLifeWorkshop />} />
+        <Route path="/register" element={<Register/>}/>
       </Routes>
     </div>
   );
