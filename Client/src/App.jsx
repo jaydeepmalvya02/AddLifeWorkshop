@@ -9,7 +9,7 @@ function App() {
     <div className="container">
       <Routes>
         <Route path="/" element={<AddLifeWorkshop />} />
-        <Route path="/register" element={<Register/>}/>
+        <Route path="/list" element={<UserManagement/>}/>
       </Routes>
     </div>
   );
